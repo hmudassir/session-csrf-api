@@ -6,6 +6,8 @@ Passwords are stored with **Argon2id** (`Argon2PasswordEncoder.defaultsForSpring
 
 The browser never receives the password hash. The session id lives in an `HttpOnly` cookie named `SESSION`. The CSRF token is a separate cookie, `XSRF-TOKEN`, which JavaScript can read and send back as the `X-XSRF-TOKEN` header.
 
+The boundaries, the request path, and the failure responses are in [docs/architecture.md](docs/architecture.md).
+
 ## Run
 
 Java 21.
